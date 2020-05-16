@@ -1,4 +1,4 @@
-import countries from "./data/countries.json";
+import * as countries from "./data/countries.json";
 
 /**
  * Find country by country iso2 or iso3 code
