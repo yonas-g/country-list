@@ -1,16 +1,16 @@
-Get world countries.
+Get world countries. \
 Minimal countries information finder
 
-## byCountryCode
+## countryCode
 
 find country by country code
 accepts both iso2 ( 2 letter) and iso3 ( 3 letter ) code
 
-`@param {String} code`
+`@param {string} code`
 
 ```javascript
-const countryFinder = require("country-finder");
-let result = countryFinder.byCountryCode("et");
+import countryFinder = from "https://deno.land/x/country-list/mod.ts";
+let result = countryFinder.countryCode("et");
 /***
 	{
 		"id": 231,
@@ -24,17 +24,17 @@ let result = countryFinder.byCountryCode("et");
 */
 ```
 
-`@param {String} code`
+`@param {string} code`
 
-## byId
+## id
 
 find by using unique number of a country
 
-`@param {Integer} id`
+`@param {number} id`
 
 ```javascript
-const countryFinder = require("country-finder");
-let result = countryFinder.byId(344);
+import countryFinder = from "https://deno.land/x/country-list/mod.ts";
+let result = countryFinder.id(344);
 /***
 	{
 		"id": 344,
@@ -48,15 +48,15 @@ let result = countryFinder.byId(344);
 */
 ```
 
-## byName
+## name
 
 Find by using country name
 
-`@param {String} name`
+`@param {string} name`
 
 ```javascript
-const countryFinder = require("country-finder");
-let result = countryFinder.byName("Ethiopia");
+import countryFinder = from "https://deno.land/x/country-list/mod.ts";
+let result = countryFinder.name("Ethiopia");
 /***
 	{
 		"id": 231,
@@ -70,15 +70,15 @@ let result = countryFinder.byName("Ethiopia");
 */
 ```
 
-## byContinent
+## continent
 
 returns a list of countries that match a given continent
 
-`@param {String} continent`
+`@param {string} continent`
 
 ```javascript
-const countryFinder = require("country-finder");
-let result = countryFinder.byContinent("Africa");
+import countryFinder = from "https://deno.land/x/country-list/mod.ts";
+let result = countryFinder.continent("Africa");
 /***
 [
   {
@@ -110,7 +110,7 @@ let result = countryFinder.byContinent("Africa");
 a list of available countries with the following parameters
 
 ```javascript
-const countryFinder = require("country-finder");
+import countryFinder = from "https://deno.land/x/country-list/mod.ts";
 let result = countryFinder.all();
 /***
 [
