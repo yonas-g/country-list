@@ -9,7 +9,7 @@ accepts both iso2 ( 2 letter) and iso3 ( 3 letter ) code
 `@param {string} code`
 
 ```javascript
-import countryFinder = from "https://deno.land/x/country-list/mod.ts";
+import countryFinder from "https://deno.land/x/country-list/mod.ts";
 let result = countryFinder.countryCode("et");
 /***
 	{
@@ -33,7 +33,7 @@ find by using unique number of a country
 `@param {number} id`
 
 ```javascript
-import countryFinder = from "https://deno.land/x/country-list/mod.ts";
+import countryFinder from "https://deno.land/x/country-list/mod.ts";
 let result = countryFinder.id(344);
 /***
 	{
@@ -55,7 +55,7 @@ Find by using country name
 `@param {string} name`
 
 ```javascript
-import countryFinder = from "https://deno.land/x/country-list/mod.ts";
+import countryFinder from "https://deno.land/x/country-list/mod.ts";
 let result = countryFinder.name("Ethiopia");
 /***
 	{
@@ -77,7 +77,7 @@ returns a list of countries that match a given continent
 `@param {string} continent`
 
 ```javascript
-import countryFinder = from "https://deno.land/x/country-list/mod.ts";
+import countryFinder from "https://deno.land/x/country-list/mod.ts";
 let result = countryFinder.continent("Africa");
 /***
 [
@@ -110,7 +110,7 @@ let result = countryFinder.continent("Africa");
 a list of available countries with the following parameters
 
 ```javascript
-import countryFinder = from "https://deno.land/x/country-list/mod.ts";
+import countryFinder from "https://deno.land/x/country-list/mod.ts";
 let result = countryFinder.all();
 /***
 [
