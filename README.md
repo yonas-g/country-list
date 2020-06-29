@@ -147,3 +147,13 @@ let result = countryFinder.all();
 -   continent
 -   lat
 -   long
+
+
+## flags
+Start the flag server via: 
+
+```
+
+deno run --allow-read --allow-net flagserver.ts
+
+```
